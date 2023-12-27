@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Checkout</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/icons8-online-store-64.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="logo">logo</div>
+        <button class="btn-h">=</button>
+        <div class="nav-menu">
+            <nav>
+                <a class="active" href="home.html">home</a>
+                <!-- <a href="">about</a> -->
+                <a href="booking.html">booking</a>
+                <a href="store.html">store</a>
+                <a href="orders.html">orders</a>
+                <a href="#" class="cart">Cart
+                    <i class="fa-solid fa-cart-shopping me-2"></i>
+                    <p>0</p>
+                </a>
+                <div class="dropdown">
+                    <a href="" class=" dropdown-btn">pages <ion-icon style="transform: translate(-5px,5px);"
+                            name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about.html">about</a>
+                        <a href="services.html">services</a>
+                        <a href="news.html">news</a>
+                        <a href="team.html">team</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="404.html">404</a>
+                        <a href="contact.html">contact</a>
+                    </div>
+                </div>
+
+            </nav>
+            <div class="account">
+                <button class="user"></button>
+                <button class="logout">Logout</button>
+                <!-- <button class="user">mohamed</button> -->
+                <!-- <button class="logout">Logout</button> -->
+            </div>
+        </div>
+    </header>
+    <!-- start header -->
+
+    <section class="checkout">
+        <div class="payment">
+            <div class="visa">
+                <div class="visa-card">
+                    <div class="card-inner">
+                        <div class="front">
+                            <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                            <div class="row">
+                                <img src="https://i.ibb.co/G9pDnYJ/chip.png" width="60px">
+                                <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="60px">
+                            </div>
+                            <div class="row card-no">
+                                <!-- <p data-col="0">#</p>
+                                <p data-col="1">#</p>
+                                <p data-col="2">#</p>
+                                <p class="me-3" data-col="3">#</p>
+                                <p data-col="4">#</p>
+                                <p data-col="5">#</p>
+                                <p data-col="6">#</p>
+                                <p class="me-3" data-col="7">#</p>
+                                <p data-col="8">#</p>
+                                <p data-col="9">#</p>
+                                <p data-col="10">#</p>
+                                <p class="me-3" data-col="11">#</p>
+                                <p data-col="12">#</p>
+                                <p data-col="13">#</p>
+                                <p data-col="14">#</p>
+                                <p data-col="15">#</p> -->
+                                <p class="num ">#### #### #### ####</p>
+                            </div>
+                            <div class="row card-holder">
+                                <p>CARD HPLDER</p>
+                                <p>VALID TILL</p>
+                            </div>
+                            <div class="row name">
+                                <p class="name-card">FULL NAME</p>
+                                <p>
+                                    <span class="expires-card-month">MM</span>
+                                    <span> /</span>
+                                    <span class="expires-card-year">YY</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                            <div class="bar"></div>
+                            <div class="row card-cvv">
+                                <div>
+                                    <img src="https://i.ibb.co/S6JG8px/pattern.png">
+                                </div>
+                                <p class="code-card"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="index.html" class="wrapper">
+                <div class="input-box">
+                    <label for="card-holder">Card Holder</label><br>
+                    <input type="text" name="card-holder" id="card-holder" placeholder="Mohamed Wael" required>
+                </div>
+                <div class="input-box ">
+                    <label for="card-no">Card Number</label><br>
+                    <input type="text" name="card-no" id="card-no" placeholder="3051 2251 4842 7982" required>
+                </div>
+                <div class="d-flex">
+                    <div class="input-box me-4">
+                        <label>Expires Date</label><br>
+                        <select name="Month" id="Month" required>
+                            <option selected>Month</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                        </select>
+                        <select name="year" id="year" required>
+                            <option selected>Year</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+
+
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label>CVV</label> <br>
+                        <input type="text" name="card-code" id="card-code" placeholder="030" required>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary w-100 my-0 mx-auto" style="font-size: 1.5rem;"
+                    value="payment">
+            </form>
+        </div>
+        <div class="priceofpayment">
+            <table>
+                <tr>
+                    <th>title</th>
+                    <th>number</th>
+                    <th>price</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- end checkout -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="overlay">
+            <div class="cell">
+                <h2 class="logo">logo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec </p>
+                <div class="social">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <ion-icon name="logo-wordpress"></ion-icon>
+                </div>
+            </div>
+            <div class="cell">
+                <h2>other pages</h2>
+                <ul class="other-pages">
+                    <li>
+                        <a href="#">> home</a>
+                    </li>
+                    <li>
+                        <a href="#">> about us</a>
+                    </li>
+                    <li>
+                        <a href="#">> service</a>
+                    </li>
+                    <li>
+                        <a href="#">> contact</a>
+                    </li>
+                    <li>
+                        <a href="#">> team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>quick links</h2>
+                <ul class="quick-links">
+                    <li>
+                        <a href="#">> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">> News</a>
+                    </li>
+                    <li>
+                        <a href="#">> comming soon</a>
+                    </li>
+                    <li>
+                        <a href="#">> 404</a>
+                    </li>
+                    <li>
+                        <a href="#">> credit</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>newsletter</h2>
+                <p>subscribe to newsletter</p>
+                <input type="email" placeholder="email">
+                <br>
+                <input type="button" value="subscribe">
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- JavaScript ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- <script src="lib/wow/wow.min.js"></script> -->
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+
+    <!-- Template Javascript -->
+    <script src="js/user.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

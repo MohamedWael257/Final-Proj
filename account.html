@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon id="close-outline" name="close-outline"></ion-icon> </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="emaill" name="emaill" id="emaill" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="passwordd" id="passwordd" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn" id="login_btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an acoount?
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <!-- <button type="submit" id="otb-btn" class="btn">Register</button> -->
+            <h2>Register</h2>
+            <form>
+                <div class="input-box">
+                    <span class="erroruser error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="username" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="erroremail error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" name="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="errorphone error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="call"></ion-icon> </span>
+                    <input type="tel" name="Phone" id="phone" required>
+                    <label>Phone</label>
+                </div>
+                <div class="input-box">
+                    <span class="errorpassword error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="password" id="password" required>
+                    <label>Password</label>
+                    <div class="strength"></div>
+                </div>
+                <div class="input-box">
+                    <span class="errorconfpassword error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="" id="confpassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="errorcarimage error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="file" id="carimage" name="carimage" accept="image/*" />
+                    <!-- onChange={(e) => setPhotoimage(e.target.files[0])} -->
+                    <!-- <input type="file" name="carimage" id="carimage" required hidden> -->
+                    <label for="carimage" style="transform: translateY(10px);">Car Image</label>
+                </div>
+                <div class="input-box">
+                    <span class="errorcarmodel error text-danger"></span>
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="carmodel" id="carmodel" required>
+                    <label>Car Model</label>
+                </div>
+                <div class="remember-forget text-center">
+                    <label>
+                        <input type="checkbox">
+                        I agree the terms & conditions
+                    </label>
+                </div>
+                <button type="submit" id="register_btn" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an acoount?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box otp">
+            <h2>OTP Verification</h2>
+            <div id="otp">
+                <p id="otpmessage">We've sent vertification code to your email : </p>
+            </div>
+            <br><br>
+            <form>
+                <div class="input-box">
+                    <input type="text" name="codetest" required>
+                    <label>Enter verification code</label>
+                </div>
+                <!-- <button onclick="sub()">wsws</button> -->
+            </form>
+            <!-- <button class="btn"onclick="sub()" >Submit</button> -->
+            <button class="btn" id="opt_code">Submit</button>
+        </div>
+    </div>
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/account.js"></script>
+</body>
+
+</html>
