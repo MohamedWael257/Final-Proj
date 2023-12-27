@@ -78,7 +78,7 @@ else {
     id = 0
 }
 submit_btn.addEventListener("click", function (e) {
-    validtion();
+    // validtion();
     let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
     let emailw = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     let validateUser = username.value !== "" && username.value.length > 6 && username.value.length < 20
@@ -90,7 +90,7 @@ submit_btn.addEventListener("click", function (e) {
     const findemail = users.findIndex((obj) => obj.email === email.value)
     const findeusername = users.findIndex((obj) => obj.username === username.value)
     const findephone = users.findIndex((obj) => obj.phone === phone.value)
-    if (validateUser && validatePass && validateEmail && validateconfPass && validatePhone && validateCarmodel && findemail < 0 && findeusername < 0 && findephone < 0) {
+    // if (validateUser && validatePass && validateEmail && validateconfPass && validatePhone && validateCarmodel && findemail < 0 && findeusername < 0 && findephone < 0) {
         let userUI = {
             id: id,
             username: username.value,
@@ -111,7 +111,7 @@ submit_btn.addEventListener("click", function (e) {
         localStorage.setItem("account", JSON.stringify(account));
         window.replace("home.html")
         // wrapper.classList.add("active-otopup")
-    }
+    // }
     // else {
     //     e.preventDefault()
     //     // email.value = ""
