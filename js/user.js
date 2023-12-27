@@ -7,10 +7,10 @@ if (account) {
     user.innerHTML = account.username;
 
 }
-// else {
-    // user.innerHTML = account.username;
-    // window.location.replace("index.html")
-// }
+else {
+    user.innerHTML = account.username;
+    window.location.replace("index.html")
+}
 let getcard = localStorage.getItem('cart')
 let cartt = JSON.parse(getcard)
 let cartlength = document.querySelector("header .nav-menu a.cart p")
