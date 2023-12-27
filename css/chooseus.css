@@ -1,0 +1,114 @@
+.choose-us {
+    /* background: linear-gradient(to bottom, black, rgb(35, 35, 35)); */
+    background-image: url(../images/about-us-Foto-2.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 130vh;
+    color: white;
+    position: relative;
+    z-index: 22;
+}
+
+.choose-us .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #06090d 20%, rgba(0, 0, 0, 0.5));
+    /* z-index: -1; */
+    padding: 0 9rem;
+    padding-top: 10rem;
+}
+
+.choose-us .overlay>h3 {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #05bbfe;
+}
+
+.choose-us .overlay>h2 {
+    text-transform: capitalize;
+    font-size: 3.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.choose-us .overlay>p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.choose-us .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.choose-us .cards .card {
+    width: 250px;
+    padding: 24px;
+    border-radius: 25px;
+}
+
+.choose-us .cards .card:nth-child(1),
+.choose-us .cards .card:nth-child(4) {
+    background-color: #FFFFFF3D;
+}
+
+.choose-us .cards .card:nth-child(2),
+.choose-us .cards .card:nth-child(3) {
+    background-color: #05bbfe;
+    transform: translateY(50px);
+    color: #000;
+}
+
+.choose-us .cards .card .card-img {
+    margin: 10px 0;
+}
+
+.choose-us .cards .card .card-title {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.choose-us .cards .card .card-desc {
+    font-size: 1rem;
+}
+
+.choose-us .images {
+    position: relative;
+    margin-top: 100px;
+    width: 85vw;
+}
+
+.choose-us .images .cell-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose-us .images .cell-img img:nth-child(1) {
+    width: 480px;
+    height: 340px;
+    border-radius: 32px;
+}
+
+.choose-us .images .cell-img img:nth-child(2) {
+    width: 600px;
+    height: 420px;
+    border-radius: 32px;
+}
+
+.choose-us .images>img {
+    position: absolute;
+    bottom: 25px;
+    left: 350px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}

@@ -1,0 +1,266 @@
+header {
+    position: absolute;
+    position: relative;
+    width: 100%;
+    /* display: grid; */
+    /* grid-template-columns: 10% 80% 10%; */
+    /* gap: 3%; */
+    /* padding: 0 10rem; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #06090d;
+    color: white;
+    z-index: 333;
+}
+
+header .logo {
+    /* background-color: teal; */
+    width: 200px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+header .nav-menu {
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .nav-menu nav {
+    /* background-color: tan; */
+    width: 700px;
+    margin-top: 15px;
+    display: flex;
+}
+
+header .nav-menu nav a {
+    margin-left: 25px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: white;
+    transition: .3s color;
+}
+
+header .nav-menu a.cart {
+    position: relative;
+}
+
+header .nav-menu a.cart p {
+    /* content: "0"; */
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    /* background-color: #477cff; */
+    /* color: #06090d; */
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* width: 35px; */
+    /* height: 35px; */
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #477cff;
+    /* color: #47afff; */
+    /* color: #47FFF4; */
+}
+
+header .account {
+    width: 300px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .account button,
+.booknow,
+.learn-more {
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #477cff;
+    /* background-color: #477cff; */
+    border-radius: 50px;
+    border: 2px solid #477cff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: 1s color, 1s box-shadow;
+}
+
+header .account button:hover,
+.booknow:hover,
+.learn-more:hover {
+    color: white;
+    /* background-color: black; */
+    transition-delay: 0s, 1s;
+    box-shadow:
+        0 0 10px #477cff,
+        0 0 20px #477cff,
+        0 0 40px #477cff,
+        0 0 50px #477cff;
+}
+
+header .account button::before,
+.booknow::before,
+.learn-more::before {
+    content: "";
+    position: absolute;
+    left: -40%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #477cff;
+    transform: skew(35deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.btn-h {
+    display: none;
+    font-size: 3rem;
+    font-weight: 500;
+    /* padding: 0px 30px; */
+    background-color: transparent;
+    color: #477cff;
+    cursor: pointer;
+}
+
+header .account button:hover::before,
+.booknow:hover::before,
+.learn-more:hover::before {
+    width: 100%;
+}
+
+header .dropdown {
+    position: relative;
+}
+
+header .dropdown-menu {
+    background-color: #06090d;
+    position: absolute;
+    top: 45px;
+    display: grid;
+    width: 200px;
+    border-radius: 15px;
+    /* height: 250px; */
+    padding: 8px;
+    z-index: 3333;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s opacity, .4s visibility;
+}
+
+header .dropdown .dropdown-menu a {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media(max-width:1200px) {
+
+
+    header .nav-menu {
+        width: 850px;
+    }
+}
+
+@media(max-width:992px) {
+    .btn-h {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header .nav-menu {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background-color: rgb(41, 41, 41);
+        z-index: 333;
+        top: 92px;
+        left: 0;
+        display: grid;
+        overflow: hidden;
+        height: 0;
+        transition: 1s height;
+    }
+
+    header .nav-menu.active {
+        height: 380px;
+    }
+
+    header .nav-menu nav,
+    header .nav-menu .account {
+        text-align: center;
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header .nav-menu .account button {
+        margin: 0;
+        margin-left: 15px;
+    }
+}
+
+/* /////////////////////header///////////////// */
+.home {
+    background-image: url(../../images/BG-Sub-Hero-1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    height: 50vh;
+    position: relative;
+    padding: 5rem 9rem;
+}
+
+.home2 {
+    height: 65vh;
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home-content {
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.home-content h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+}

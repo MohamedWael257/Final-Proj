@@ -1,0 +1,109 @@
+.our-trust {
+    background-color: #0f5069e8;
+    padding: 10rem 9rem 4rem 9rem;
+    /* color: white; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+/* .our-trust-left{} */
+.our-trust .our-trust-left h3 {
+    color: #05bbfe;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.our-trust .our-trust-left h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.our-trust .our-trust-left p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.our-trust .our-trust-left a {
+    color: black;
+    margin-right: 20px;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 32px;
+    text-transform: capitalize;
+    transition: .4s background;
+}
+
+.our-trust .our-trust-left a.learn {
+    background-color: white;
+}
+
+.our-trust .our-trust-left a.contact {
+    background-color: #05bbfe;
+}
+
+.our-trust .our-trust-left a.learn:hover {
+    background-color: #05bbfe;
+}
+
+.our-trust .our-trust-left a.contact:hover {
+    background-color: white;
+}
+
+
+.our-trust .our-trust-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.our-trust .our-trust-right .card {
+    background-color: #05bbfe;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.our-trust .our-trust-right .card .card-img {
+    width: 80px;
+    height: 80px;
+    transform: translate(15px, 15px);
+}
+
+.our-trust .our-trust-right .card h2 {
+    text-transform: capitalize;
+}
+
+.our-trust .our-trust-right .card button {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.our-trust .our-trust-slider {
+    position: absolute;
+    background: linear-gradient(to right, white, #05bbfe);
+    top: -80px;
+    left: 10%;
+    width: 80%;
+    height: 170px;
+    z-index: 333;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-trust .our-trust-slider p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}

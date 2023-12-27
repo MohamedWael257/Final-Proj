@@ -1,0 +1,64 @@
+.team-member {
+    background-color: #06090d;
+    color: white;
+}
+
+.team-member>h2 {
+    color: #477cff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.team-member>h3 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.team-member>p {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.team-member .members {
+    padding: 2rem 8rem;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    /* justify-content: center; */
+
+}
+
+.team-member .members .member {
+    /* width: 350px; */
+    width: 100%;
+    border-radius: 25px;
+    background-color: #19262d;
+    text-align: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.team-member .members .member .member-img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.team-member .members .member .member-name {
+    color: #477cff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.team-member .members .member .member-track {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}

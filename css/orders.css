@@ -1,0 +1,78 @@
+.orders {
+    background-image: url(../images/About-Us-BG-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    padding: 6rem 4rem;
+    /* background-color: #000; */
+    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+
+    /*  */
+    background-color: #06090d;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    /*  */
+    /* margin: auto; */
+    /* margin-top: 40px; */
+    min-height: 50vh;
+}
+
+.tdimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.table,
+td,
+th {
+    text-align: center;
+    /* padding: 15px; */
+    /* margin: 0 5px; */
+    border: 2px solid #477cff;
+}
+
+.table {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .orders {
+        width: 80%;
+        height: 76.5vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .orders {
+        width: 90%;
+        height: auto;
+    }
+
+    .image {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .orders {
+        width: 98%;
+        height: auto;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    .table thead tr :nth-child(3),
+    .table tbody tr :nth-child(3),
+    .table thead tr :nth-child(5),
+    .table tbody tr :nth-child(5) {
+        display: none;
+    }
+}

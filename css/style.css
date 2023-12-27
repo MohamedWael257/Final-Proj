@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+body {
+    /* background-color: #06090d; */
+    /* overflow: hidden; */
+}
+
+html::-webkit-scrollbar {
+    width: .7rem;
+    background: #21252b;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(4, 128, 223);
+}
+
+::selection {
+    background: rgb(4, 128, 223);
+    color: #21252b;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* @media(max-width:1200px) {
+    body {
+        background-color: yellow;
+    }
+
+}
+
+@media(max-width:992px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media(max-width:576px) {
+    body {
+        background-color: red;
+    }
+} */
+
+
+
+/* ////////////////////////////// */
+/*.elementor-kit-3 {
+    --e-global-color-primary: #FFFFFF;
+    --e-global-color-secondary: #47FFF4;
+    --e-global-color-text: #FFFFFFE3;
+    --e-global-color-accent: #06090D;
+    --e-global-color-7f533e1: #8DAFB1;
+    --e-global-color-ac0ee91: #185854;
+    --e-global-color-18fc1d1: #8699B4;
+    --e-global-color-a561891: #8D969E;
+    --e-global-color-ba05a29: #282D34;
+    --e-global-color-92508b9: #0F6369E8;
+    --e-global-color-99638b4: #1F3138BD;
+    --e-global-color-97c2d56: #FFFFFF3D;
+    --e-global-color-d24a848: #152128;
+    --e-global-color-802a573: #43C8C0;
+    --e-global-color-fa47e74: #C0DBD9;
+    --e-global-typography-primary-font-family: "Montserrat";
+    --e-global-typography-primary-font-size: 56px;
+    --e-global-typography-primary-font-weight: 800;
+    --e-global-typography-primary-line-height: 64px;
+    --e-global-typography-secondary-font-family: "Montserrat";
+    --e-global-typography-secondary-font-size: 18px;
+    --e-global-typography-secondary-font-weight: 500;
+    --e-global-typography-secondary-text-transform: uppercase;
+    --e-global-typography-secondary-line-height: 24px;
+    --e-global-typography-text-font-family: "Montserrat";
+    --e-global-typography-text-font-size: 18px;
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-text-line-height: 24px;
+    --e-global-typography-accent-font-family: "Montserrat";
+    --e-global-typography-accent-font-size: 18px;
+    --e-global-typography-accent-font-weight: 700;
+    --e-global-typography-accent-text-transform: capitalize;
+    --e-global-typography-accent-line-height: 24px;
+    --e-global-typography-89e1993-font-family: "Montserrat";
+    --e-global-typography-89e1993-font-size: 136px;
+    --e-global-typography-89e1993-font-weight: 900;
+    --e-global-typography-89e1993-line-height: 124px;
+    --e-global-typography-f3026f6-font-family: "Montserrat";
+    --e-global-typography-f3026f6-font-size: 32px;
+    --e-global-typography-f3026f6-font-weight: 700;
+    --e-global-typography-f3026f6-text-transform: capitalize;
+    --e-global-typography-f3026f6-line-height: 40px;
+    --e-global-typography-4838240-font-family: "Montserrat";
+    --e-global-typography-4838240-font-size: 24px;
+    --e-global-typography-4838240-font-weight: 800;
+    --e-global-typography-4838240-line-height: 32px;
+    --e-global-typography-26a49f4-font-family: "Montserrat";
+    --e-global-typography-26a49f4-font-size: 24px;
+    --e-global-typography-26a49f4-font-weight: 700;
+    --e-global-typography-26a49f4-text-transform: capitalize;
+    --e-global-typography-26a49f4-line-height: 32px;
+    --e-global-typography-f63ea63-font-family: "Inter";
+    --e-global-typography-f63ea63-font-size: 24px;
+    --e-global-typography-f63ea63-font-weight: 600;
+    --e-global-typography-f63ea63-line-height: 32px;
+    --e-global-typography-7887be9-font-family: "Montserrat";
+    --e-global-typography-7887be9-font-size: 14px;
+    --e-global-typography-7887be9-font-weight: 400;
+    --e-global-typography-7887be9-line-height: 20px;
+    --e-global-typography-a6af2ef-font-family: "Inter";
+    --e-global-typography-a6af2ef-font-size: 18px;
+    --e-global-typography-a6af2ef-font-weight: 400;
+    --e-global-typography-a6af2ef-line-height: 24px;
+    --e-global-typography-2c0947f-font-family: "Inter";
+    --e-global-typography-2c0947f-font-size: 16px;
+    --e-global-typography-2c0947f-font-weight: 400;
+    --e-global-typography-2c0947f-line-height: 24px;
+    --e-global-typography-08cea0a-font-family: "Montserrat";
+    --e-global-typography-08cea0a-font-size: 40px;
+    --e-global-typography-08cea0a-font-weight: 800;
+    --e-global-typography-08cea0a-line-height: 40px;
+    --e-global-typography-7d04d83-font-family: "Montserrat";
+    --e-global-typography-7d04d83-font-size: 18px;
+    --e-global-typography-7d04d83-font-weight: 700;
+    --e-global-typography-7d04d83-line-height: 24px;
+    --e-global-typography-1fd4447-font-family: "Montserrat";
+    --e-global-typography-1fd4447-font-size: 15px;
+    --e-global-typography-1fd4447-font-weight: 600;
+    --e-global-typography-1fd4447-line-height: 24px;
+    --e-global-typography-a5d7854-font-family: "Montserrat";
+    --e-global-typography-a5d7854-font-size: 14px;
+    --e-global-typography-a5d7854-font-weight: 700;
+    --e-global-typography-a5d7854-text-decoration: underline;
+    --e-global-typography-a5d7854-line-height: 24px;
+    --e-global-typography-4b62042-font-family: "Montserrat";
+    --e-global-typography-4b62042-font-size: 16px;
+    --e-global-typography-4b62042-font-weight: 600;
+    --e-global-typography-4b62042-line-height: 24px;
+    --e-global-typography-f255f93-font-family: "Inter";
+    --e-global-typography-f255f93-font-size: 16px;
+    --e-global-typography-f255f93-font-weight: 600;
+    --e-global-typography-f255f93-line-height: 24px;
+    --e-global-typography-27f98c8-font-family: "Inter";
+    --e-global-typography-27f98c8-font-size: 15px;
+    --e-global-typography-27f98c8-font-weight: 400;
+    --e-global-typography-27f98c8-line-height: 24px;
+    --e-global-typography-039ef30-font-family: "Inter";
+    --e-global-typography-039ef30-font-size: 14px;
+    --e-global-typography-039ef30-font-weight: 400;
+    --e-global-typography-039ef30-line-height: 20px;
+    --e-global-typography-bdd7596-font-family: "Montserrat";
+    --e-global-typography-bdd7596-font-size: 24px;
+    --e-global-typography-bdd7596-font-weight: 700;
+    --e-global-typography-bdd7596-font-style: italic;
+    --e-global-typography-bdd7596-line-height: 32px;
+    --e-global-typography-3a9c040-font-family: "Inter";
+    --e-global-typography-3a9c040-font-size: 18px;
+    --e-global-typography-3a9c040-font-weight: 400;
+    --e-global-typography-3a9c040-line-height: 24px;
+    color: var(--e-global-color-text);
+    font-family: var(--e-global-typography-text-font-family), Sans-serif;
+    font-size: var(--e-global-typography-text-font-size);
+    font-weight: var(--e-global-typography-text-font-weight);
+    line-height: var(--e-global-typography-text-line-height);
+    background-color: var(--e-global-color-accent);
+} */

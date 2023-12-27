@@ -1,0 +1,128 @@
+.location {
+    /* background-color: rgb(204, 68, 68); */
+    padding: 10px 80px;
+
+}
+
+.location>h2 {
+    color: #32fab6;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.location>h2::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -105px;
+    background-color: #32fab6;
+    width: 100px;
+    height: 3px;
+}
+
+.location>h3 {
+    margin: 10px 0;
+    /* text-align: center; */
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.location .container {
+    display: grid;
+    grid-template-columns: 700px 400px;
+
+}
+
+.location .container .left {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.location .container .card {
+    width: 320px;
+    height: 180px;
+    /* background: linear-gradient(to bottom, transparent 0, #4770f7 15%, #8da7f3 85% 100%); */
+    /* background: linear-gradient(45deg, #4770f7, #9bb1f0); */
+    margin: 10px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    color: white;
+    border: 1px solid white;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.location .container .card div .card-location {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    /* margin-right: 50px; */
+}
+
+
+
+.location .container .right {
+    background-color: #051f42;
+    border-radius: 10px;
+}
+
+.location .container .right form {
+    padding: 15px;
+}
+
+.right form>* {
+    border-radius: 8px;
+}
+
+.right form label {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+}
+
+.right form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    font-size: 1.1rem;
+
+}
+
+.right form input::placeholder {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.right form input:nth-child(4),
+.right form input:nth-child(5) {
+    display: inline-block;
+    width: 48%;
+}
+
+.right form input:nth-child(4) {
+    margin-right: 10px;
+}
+
+.right form button {
+    color: white;
+    background-color: rgb(217, 49, 49);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin: 10px 0;
+}

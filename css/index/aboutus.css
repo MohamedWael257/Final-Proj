@@ -1,0 +1,94 @@
+.about-us {
+    /* background-color: rgb(204, 68, 68); */
+    padding: 0px 80px;
+}
+
+.about-us>h3 {
+    color: #32fab6;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+.about-us>h3::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -105px;
+    background-color: #32fab6;
+    width: 100px;
+    height: 3px;
+}
+
+.about-us .tit {
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 120px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* background-color: tan; */
+    margin: 18px 0;
+    height: 150px;
+    padding: 15px 0;
+}
+
+.about-us .tit .c1 {
+    font-size: 2.5rem;
+    /* text-align: start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10px);
+    /* width: 700px; */
+    color: white;
+    text-transform: capitalize;
+
+}
+
+.about-us .tit .c2>p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: white;
+    /* text-align: start; */
+}
+
+.about-us .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.about-us .cards img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s filter;
+}
+
+.about-us .cards img:hover {
+    filter: opacity(.7);
+}
+
+.about-us .numbers {
+    width: 700px;
+    margin: 15px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #033599; */
+    text-align: center;
+    color: white;
+}
+
+.about-us .numbers .num {
+    padding: 10px;
+    /* background-color: teal; */
+    border-right: 1px solid rgb(223, 222, 222);
+}
+
+.about-us .numbers .num h3 {
+    font-size: 4.8rem;
+    margin-bottom: 10px;
+}

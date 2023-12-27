@@ -1,0 +1,199 @@
+.our-services {
+    /* background-image: url(../images/Our-ServicesBG.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 100vh;
+    padding: 4rem 9rem;
+    background-color: #0f5069e8;
+    color: white;
+    position: relative;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.elementor-shape-top {
+    top: -1px;
+}
+
+.our-services>h3 {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #05bbfe;
+}
+
+.our-services>h2 {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.our-services .container-cards {
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.our-services .container-cards .card {
+    background-color: #05bbfe;
+    padding: 15px;
+}
+
+.our-services .container-cards .card:nth-child(1) {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: relative;
+    left: 289px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s visibility, .3s opacity, .7s left;
+    transition-delay: .3s;
+}
+
+.our-services .container-cards .card:nth-child(4) {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    right: 289px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s visibility, .3s opacity, .7s right;
+    transition-delay: .3s;
+
+}
+
+.our-services .container-cards .card:nth-child(1).active {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+.our-services .container-cards .card:nth-child(4).active {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+
+.our-services .container-cards .card:nth-child(2),
+.our-services .container-cards .card:nth-child(3) {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s visibility, .3s opacity;
+}
+
+.our-services .container-cards .card:nth-child(2).active,
+.our-services .container-cards .card:nth-child(3).active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.our-services .container-cards .card .card-icon {
+    border-radius: 20px;
+}
+
+.our-services .container-cards .card .card-title {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.our-services .container-cards .card .card-desc {
+    color: #000;
+    margin: 10px 0;
+}
+
+.our-services .container-cards .card .card-btn {
+    border: none;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.our-services>button {
+    display: flex;
+    /* justify-content: center; */
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #05bbfe;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: .3s background;
+}
+
+.our-services>button:hover {
+    background-color: white;
+}
+
+@media(max-width:1200px) {
+    .our-services {
+        padding: 4rem 1rem;
+    }
+
+    .our-services>h2 {
+        font-size: 4rem;
+    }
+
+}
+
+@media(max-width:992px) {
+    body {
+        background-color: green;
+    }
+
+    .our-services {
+        padding: 4rem 2rem;
+    }
+
+    .our-services>h2 {
+        font-size: 2.5rem;
+    }
+
+    .our-services .container-cards .card {
+        border-radius: 25px;
+    }
+
+    .our-services .container-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:768px) {
+    body {
+        background-color: blue;
+    }
+
+    .our-services>h2 {
+        font-size: 2rem;
+    }
+
+    .our-services .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .our-services .container-cards .card .card-title {
+        text-align: start;
+    }
+}

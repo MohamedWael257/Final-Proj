@@ -1,0 +1,103 @@
+footer {
+    background: url(../images/futuristic-background-of-points-and-lines-with-a-d-2022-11-09-19-05-44-utc-1-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+    position: relative;
+    min-height: 50vh;
+}
+
+footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer .overlay {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 4rem 8rem;
+}
+
+footer .overlay .cell {
+    /* background-color: aqua; */
+}
+
+footer .overlay .cell .logo,
+footer .overlay .cell h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+footer .overlay .cell p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer .overlay .cell .social ion-icon {
+    margin: 0 10px;
+    background-color: #05bbfe;
+    color: #000;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+footer .overlay .cell .other-pages,
+footer .overlay .cell .quick-links {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+footer .overlay .cell .other-pages li,
+footer .overlay .cell ul.quick-links li {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: capitalize;
+    transition: .3s transform;
+}
+
+footer .overlay .cell .other-pages li:hover,
+footer .overlay .cell ul.quick-links li:hover {
+    transform: translateX(30px);
+}
+
+footer .overlay .cell .other-pages li a,
+footer .overlay .cell ul.quick-links li a {
+    color: white;
+}
+
+footer .overlay .cell p {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+footer .overlay .cell input[type="email"] {
+    padding: 8px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 15px;
+}
+
+footer .overlay .cell input[type="button"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0;
+    background-color: #05bbfe;
+    text-transform: capitalize;
+
+}

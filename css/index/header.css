@@ -1,0 +1,264 @@
+header {
+    /* background-color: #0480df; */
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    /* height: 66px; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* justify-content: space-between; */
+    /* padding: 10px 25px; */
+}
+
+header .logo {
+    padding: 10px;
+}
+
+header .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+header nav {
+    /* background-color: thistle; */
+    margin-top: 15px;
+}
+
+header nav ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* font-size: 1.4rem; */
+    /* text-transform: capitalize; */
+}
+
+header nav ul li a {
+    margin: 0 25px;
+    padding: 10px 19px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+}
+
+header nav ul li a::after,
+header nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    border-style: solid;
+    transition: transform .5s;
+}
+
+header nav ul li a::before {
+    border-width: 0 2px;
+    height: 100%;
+    width: 95%;
+    transform: scale3d(1, 0, 1);
+}
+
+header nav ul li a:hover::before {
+    transform: scale3d(1, 1, 1);
+}
+
+header nav ul li a::after {
+    border-width: 2px 0;
+    height: 96%;
+    width: 98%;
+    transform: scale3d(0, 1, 1);
+}
+
+header nav ul li a:hover::after {
+    transform: scale3d(1, 1, 1);
+}
+
+header nav ul li a.active::after,
+header nav ul li a.active::before {
+    transform: scale3d(1, 1, 1);
+}
+
+header .account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .account button {
+    margin: 0 5px;
+    padding: 5px 20px;
+    /* height: 60px; */
+    background-color: transparent;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    border-radius: 10px;
+    color: white;
+    border-color: white;
+    transition: background .5s;
+}
+
+
+/* header .type-account {
+    background-color: black;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: .3s visibility, .3s opacity, .8s top;
+    top: -250px;
+    left: 400px;
+    z-index: 33;
+} */
+
+header .type-account {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 333;
+    color: white;
+    /* justify-content: space-evenly; */
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s visibility, .3s opacity, .8s top;
+}
+
+header .type-account .container {
+    background-color: #1761f4;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    height: 350px;
+    display: grid;
+    /* justify-content: space-evenly; */
+    margin: 10px auto;
+    position: absolute;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    /* transition-delay: .4s; */
+    /* visibility: hidden; */
+    /* position: absolute; */
+    /* transition: 0.4s; */
+    /* display: grid; */
+    /* place-content: center */
+}
+
+header .type-account .container .con1,
+header .type-account .container .con2 {
+    /* background-color: tan; */
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+header .type-account .container .con1 p {
+    font-size: 1.5rem;
+    color: #1761f4;
+}
+
+header .type-account .container a {
+    color: white;
+    margin: 10px 0;
+    border: 3px solid #1761f4;
+    height: fit-content;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: .5s background, .5s color;
+}
+
+header .type-account .container a:hover {
+    background-color: rgb(222, 220, 220);
+    color: #000;
+}
+
+header .type-account .container hr {
+    border: none;
+    border-bottom: 2px solid beige;
+}
+
+header .type-account .container .close,
+header .type-account .container .con2 button:nth-child(1) {
+    height: fit-content;
+    /* width: fit-content; */
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 2px solid #1761f4;
+    border-radius: 10px;
+    /* display: flex; */
+    background-color: transparent;
+    color: #1761f4;
+}
+
+header .type-account.active {
+    opacity: 1;
+    visibility: visible;
+    /* top: 250px; */
+}
+
+/* header .type-account .container.act {
+    transform: translate(-50%, -50%) scale(1);
+} */
+
+/* //////////////////end header/////////////////// */
+
+.home {
+    height: 100vh;
+    background-image: url(../../images/home-img.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+
+.home .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(4, 128, 223, 0.4);
+}
+
+.home-content {
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .title {
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.home .home-desc {
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.home .home-btn {
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1761f4;
+}
